@@ -1,0 +1,90 @@
+/*
+estrutura de pagina
+<html>
+        <body>
+                <div class="cabecalho"></div>
+                <div class="titulo"></div>
+                <div class="corpo"></div>
+                <div class="rodape">
+                        <div class=assinatura"></div>
+                </div>
+        </body>
+</html>
+*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background: #eeeeee;
+    font-family: Arial;
+}
+.container{
+    position: relative;
+    width: 50%;
+    position: relative;
+    background: #ffffff;
+    margin: 30px auto;
+    padding: 5px;
+    box-shadow: 0.5px  0.5px 5px black ;
+    border-radius: 2px;
+    font-family: Arial;
+    text-align: center;
+}
+.cabecalho{
+    margin: 10px;
+    height: 10%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: relative;
+}
+.titulo{
+    font-weight: bold;
+}
+.corpo{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position:relative;
+    border-radius: 2px;
+    position: relative;
+    clear: both;
+}
+.rodape{
+    height: 10%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: left;
+}
+th{
+    text-align:center;
+    background: #004080;
+    color: white;
+    padding: 4px;
+}
+td{
+    font-size: 13px;
+    text-align: left;
+    padding: 5px;
+}
+.corpo table tbody tr:nth-child(odd){
+    background: #eee;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+
+}
+@media print{
+    body{
+        box-shadow: none;
+        width: 100% !important;
+    }
+    h4{
+        background: #eeeeee;
+    }
+    .container{
+        box-shadow: none;
+        width: 100% !important;
+    }
